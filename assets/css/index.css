@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+
+/* ================================ global design =========================== */
+:root{
+    --primary:#ff6400;
+    --secondary:#00a9a4;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style:normal;
+}
+.margin{
+    margin: 0 4%;
+}
+/* ================================ end of global design =========================== */
