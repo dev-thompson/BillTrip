@@ -1,0 +1,8 @@
+@media (max-width:1000px) {
+    .register-right{
+        display: none;
+    }
+    .register-left {
+        width: 100%;
+    }
+}

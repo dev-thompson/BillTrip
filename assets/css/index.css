@@ -5,15 +5,550 @@
 /* ================================ global design =========================== */
 :root{
     --primary:#ff6400;
+    --main:linear-gradient(99deg, #ff6400 15.5%, #ff924a 100%);
+    --main-2:linear-gradient(99deg, #00a9a4 15.5%, #00a9a4 100%);
     --secondary:#00a9a4;
+    --body:#fafbf9;
+    --text:#555;
+    --black:#363232;
 }
 body {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style:normal;
+    font-family: sans-serif;
+    background-color: var(--body);
 }
 .margin{
     margin: 0 4%;
 }
+a{
+    text-decoration:none;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color:#ccc;
+}
+::placeholder {
+    color:#aaa;
+    font-size: 14px;
+}
+label {
+    font-weight: 400;
+    font-size: 15px;
+}
+.modal-btn {
+    border: none;
+    outline: none;
+    background: var(--main);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+.main-btn{
+    border: none;
+    outline: none;
+    background: var(--main);
+    width: 100%;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-btn{
+    border: none;
+    outline: none;
+    background: var(--main);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    transition: background 1s ease-in-out ;
+}
+.nav-btn:hover {
+    background: var(--secondary);
+}
+.card-btn{
+    border: 1px solid var(--primary);
+    outline: none;
+    background: transparent;
+    padding: 15px 20px;
+    color: var(--primary);
+    border-radius: 5px;
+    transition: background 1s ease-in-out ;
+}
+.card-btn:hover {
+    background: var(--secondary);
+    color:white;
+    border: unset;
+}
+.about-btn{
+    border: none;
+    outline: none;
+    background: var(--secondary);
+    padding: 15px 20px;
+    color: white;
+    border-radius: 5px;
+    transition: 1s ease-in-out ;
+}
+.about-btn:hover {
+    background: var(--main);
+}
 /* ================================ end of global design =========================== */
+
+/* ================================== register section =================================== */
+.all-register {
+    font-family: sans-serif;
+}
+.register-content {
+    display: flex;
+    align-self: center;
+    
+}
+.register-left {
+    width: 42%;
+    padding: 20px;
+    color: var(--text);
+    height: 100vh;
+    overflow-y: scroll;
+}
+.register-left p{
+    font-size: 15px;
+}
+.register-left::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+}
+
+.register-left::-webkit-scrollbar-track {
+    background: var(--main); /* Background color of scrollbar track */
+}
+
+.register-left::-webkit-scrollbar-thumb {
+    background: var(--main); /* Color of the draggable scrollbar handle */
+    border-radius: 5px;
+}
+
+.register-left::-webkit-scrollbar-thumb:hover {
+    background: var(--main); /* Color on hover */
+}
+.register-right {
+    width: 58%;
+}
+.register-right img{
+    width: 100%;
+    height: 100vh;
+}
+.register-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+}
+.backward{
+    width: 60px;
+}
+.register-left p{
+    font-weight: 400;
+}
+.register-left h4{
+    font-weight: bold;
+}
+.google-login label{
+    font-weight: 300;
+    cursor: pointer;
+    color: var(--text);
+}
+.google-login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 12px;
+    border-radius: 6px;
+    background-color: white;
+}
+.other{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left-input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+.left-input:hover{
+    /* border: 1px solid var(--primary); */
+    border-color: var(--primary);
+}
+.left-input {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+.check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.check span {
+    color: var(--primary);
+    cursor: pointer;
+    transition: .30s ease;
+}
+.check span:hover{
+    border-bottom:2px solid var(--primary);
+    padding-bottom: 7px;
+}
+.forgot p {
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .30s ease;
+    width: fit-content;
+}
+.forgot p:hover{
+    border-bottom:2px solid var(--primary);
+    padding-bottom: 7px;
+}
+
+.check input{
+    accent-color: var(--primary);
+}
+.user-rd {
+    text-align: center;
+}
+.user-rd a{
+    color: var(--primary);
+    transition: .30s ease;
+}
+.user-rd a:hover{
+    border-bottom:2px solid var(--primary);
+    padding-bottom: 7px;
+}
+.otp-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.otp-input:focus {
+    border-color: var(--primary);
+}
+/* ================================== end of register section =================================== */
+
+/* ================================== navbar section ================================== */
+.all-navbar{
+    background-color:white;
+    padding: 10px 0;
+}
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.nav-right a{
+    font-size: 17px;
+    color: var(--text);
+}
+/* ================================== end of navbar section ================================== */
+
+/* ====================================== hero section ============================== */
+.all-hero{
+    padding: 50px 0 0 0 ;
+    background: linear-gradient(to left, rgba(110, 236, 231, 0.7), rgba(240, 239, 239, 0.7)), url(../image/form.jpg) no-repeat center center/cover;
+}
+.all-about{
+    padding: 50px 0 0 0 ;
+    background: linear-gradient(to right, rgba(156, 220, 218, 0.7), rgb(253,239,228)), url(../image/form.jpg) no-repeat center center/cover;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-right img{
+    width: 100%;
+}
+.hero-left {
+    width: 50%;
+}
+.hero-right {
+    width: 50%;
+}
+.hero-left p span{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-weight:400;
+}
+.hero-left h2 span{
+    display: block;
+    font-size: 60px;
+    font-weight: bolder;
+    color: var(--black);
+}
+.hero-left h2 span:nth-child(2){
+    color: var(--primary);
+}
+.des p span {
+    color: var(--text);
+    font-size: 17px;
+    display: block;
+    text-transform: unset;
+}
+/* ====================================== end of hero section ============================== */
+
+/* ========================================= we do section =================================================== */
+.features-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  padding: 50px 0;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 40px 20px;
+  position: relative;
+  flex-wrap: nowrap; 
+}
+.features-container img{
+    margin-bottom:15px;
+}
+.feature {
+  text-align: center;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.feature.up {
+  transform: translateY(-30px);
+}
+.feature.up h4{
+    color: var(--black);
+    font-weight: bold;
+}
+.feature.up p{
+    color: var(--text);
+    font-size: 16px;
+}
+.feature.down p{
+    color: var(--text);
+    font-size: 16px;
+}
+.feature.down h4{
+    color: var(--black);
+    font-weight: bold;
+}
+.feature.down {
+  transform: translateY(100px);
+}
+.feature-head{
+    text-align: center;
+    margin-bottom:20px;
+}
+.feature-head p{
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+.feature-head h3 span{
+    display: block;
+    color: var(--text);
+    /* font-weight: bold; */
+}
+/* ============================================== we do section ======================================== */
+
+/* ======================== account section =================================== */
+.account-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text);
+    width: 37%;
+    transition: .30s ease-in-out;
+}
+.account-left:hover{
+    border: none;
+    color: white;
+    background-color: var(--secondary);
+}
+.account-left img{
+    width: 90px;
+}
+.account-left label{
+    font-size: 20px;
+}
+.account-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: center;
+}
+.all-account {
+    padding: 50px 0 70px 0;
+}
+/* ======================== end of account section =================================== */
+
+/* ====================================== about section ================================ */
+.about-left{
+    position: relative;
+    width: fit-content;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.about-content {
+    padding: 30px 0 100px 0;
+    display: flex;
+    align-items: flex-start;
+}
+.img-back {
+  width: 55%;
+  border: 4px solid white;
+  border-radius: 60px 0 0 0 ;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.img-front {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  width: 55%;
+  border-radius: 0 0 60px 0 ;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: move 40s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateY(0%);
+    }
+    10% {
+        transform: translateY(-15%);
+    }
+}
+.about-right{
+    width: 50%;
+    padding: 0 50px;
+}
+.about-right-head p{
+    color: var(--text);
+    padding: 25px 0 5px 0;
+}
+.about {
+    text-align: center;
+    color: var(--primary);
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.about span{
+    color: var(--text);
+}
+.about-item {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.about-item i{
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+.about-item label{
+    font-size: 17px;
+    color: var(--text);
+}
+/* ====================================== end of about section ================================ */
+
+/* ======================================= service section ================================================ */
+.service-image{
+    background: url(../image/our-services-image.jpg) no-repeat center center/cover;
+    height:70vh;
+    margin: 0 8%;
+    border-radius: 10px;
+}
+.all-service {
+    padding: 50px 0;
+}
+.service-item {
+    display:flex;
+    align-items: flex-start;
+    gap: 25px;
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid var(--secondary);
+    box-shadow: 3px 2px #ff924a;
+    height: fit-content;
+}
+.service-description h4{
+    color: var(--black);
+}
+.service-description p{
+    color: var(--text);
+    font-size: 15px;
+}
+.service-content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+/* ======================================= end of service section ================================================ */
+
+/* =================================== manage section ============================= */
+.manage-left h2{
+    color: var(--text);
+    margin-bottom: 30px;
+}
+.manage-left-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.manage-content {
+    display: flex;
+    align-items: center;
+}
+.manage-left{
+    width: 50%;
+}
+.manage-item h6{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--text);
+}
+.manage-item p{
+    font-size: 15px;
+    color: var(--text);
+}
+/* =================================== end of manage section ============================= */

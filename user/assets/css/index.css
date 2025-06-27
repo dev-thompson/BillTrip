@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+}
+
+/* =========================================== global design ============================================ */
+:root{
+    --body:#1a233a;
+    --text:#8a99b5;
+    --border:#283557;
+    --primary:#ff6400;
+    --secondary:#00a9a4;
+}
+.intro label{
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 6px;
+    padding:10px 35px 5px 35px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--body);
+}
+/* =========================================== end of global design ============================================ */
+
+/* ======================================== dashbard content ========================================================= */
+.dashboard-content {
+    display: flex;
+
+}
+.dash-sidebar {
+    width: 22%;
+    border-right: 1px solid var(--border);
+    background: var(--body);
+    color: var(--text);
+    height: 100vh;
+}
+.dash-body {
+    width: 78%;
+    background: var(--body);
+    color: var(--text);
+    height: 100vh;
+}
+.wrap-image {
+    display: none;
+}
+.side-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+}
+.side-nav i{
+    cursor: pointer;
+}
+.side-nav-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.profile-pic img{
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.side-nav-1-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.side-nav-1-content i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.sidebar-item-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 35px;
+}
+.sidebar-item-1 label{
+    font-weight: bold;
+    font-size: 13px;
+}
+.sidebar-items{
+    margin: 0 20px;
+    transition: 0.30s ease;
+}
+.sidebar-items:hover{
+    border-left: 3px solid rgb(117, 117, 239);
+    background: #343e58;
+    color:  rgb(121, 121, 255);
+    cursor: pointer;
+}
+.sidebar-items.active{
+    border-left: 3px solid rgb(117, 117, 239);
+    background: #343e58;
+    color:  rgb(121, 121, 255);
+    cursor: pointer;
+}
+/* ======================================== end of dashbard content ========================================================= */
