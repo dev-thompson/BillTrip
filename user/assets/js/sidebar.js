@@ -1,5 +1,5 @@
 
-const sidebarItem = document.querySelectorAll('.sidebar-items');
+const sidebarItem = document.querySelectorAll('.sidebar-item-1');
 
   sidebarItem.forEach(item => {
     item.addEventListener('click', () => {
@@ -10,3 +10,24 @@ const sidebarItem = document.querySelectorAll('.sidebar-items');
     });
 });
 
+  function toggleMenu(id, event) {
+    // Prevent submenu links from triggering toggle
+    if (event.target.closest('.submenu')) return;
+
+    const allMenus = document.querySelectorAll('.submenu');
+    const currentMenu = id ? document.getElementById(id) : null;
+
+    const isAlreadyOpen = currentMenu?.classList.contains('open');
+
+    // Close all submenus
+    allMenus.forEach(menu => {
+      menu.style.height = '0';
+      menu.classList.remove('open');
+    });
+
+    // If currentMenu exists and wasn't already open, open it
+    if (currentMenu && !isAlreadyOpen) {
+      currentMenu.style.height = currentMenu.scrollHeight + 'px';
+      currentMenu.classList.add('open');
+    }
+  }

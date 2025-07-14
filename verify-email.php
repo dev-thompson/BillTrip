@@ -1,41 +1,51 @@
-<?php 
-    $title = 'Verify Email';
-    require_once('./header.php');
-?>
 
-<!-- ========================================= register section ============================== -->
- <div class="all-register">
-    <div class="register-content">
+    <?php 
+        $title = "Verify Email";
+        require_once('./header.php');
+    ?>
+
+
+<!-- ================================= register section =============================== -->
+ <section class="all-register">
+    <div class="register-content margin">
         <div class="register-left">
-            <div class="register-logo mb-3">
-                <img class="logo" src="./assets/image/logo-2.png" alt="">
-                <a href="./index.php"><img class="backward" src="./assets/image/icon-1.png" alt=""></a>
-            </div>
-            <h4>Verify Email</h4>
-            <p>Please enter the 6 digit code that was sent to your email</p>
-
-            <form id="verifyForm" class="mt-3">
-                <div class="otp-box">
-                        <input type="text" maxlength="1" class="otp-input" id="otp1" oninput="moveToNext(this, 'otp2')">
-                        <input type="text" maxlength="1" class="otp-input" id="otp2" oninput="moveToNext(this, 'otp3')" onkeydown="moveToPrev(event, 'otp1')">
-                        <input type="text" maxlength="1" class="otp-input" id="otp3" oninput="moveToNext(this, 'otp4')" onkeydown="moveToPrev(event, 'otp2')">
-                        <input type="text" maxlength="1" class="otp-input" id="otp4" oninput="moveToNext(this, 'otp5')" onkeydown="moveToPrev(event, 'otp3')">
-                        <input type="text" maxlength="1" class="otp-input" id="otp5" oninput="moveToNext(this, 'otp6')" onkeydown="moveToPrev(event, 'otp4')">
-                        <input type="text" maxlength="1" class="otp-input" id="otp6" oninput="triggerVerify()" onkeydown="moveToPrev(event, 'otp5')">
-                </div>
-                <div class="sign-cta my-3">
-                    <a href="">
-                        <button type="button" class="main-btn">Verify</button>
-                    </a>
-                </div>
-            </form>
+            <img src="./assets/image/login-2.png" alt="">
         </div>
         <div class="register-right">
-            <img src="./assets/image/login.jpg" alt="">
+            <div class="register-right-content">
+                <div class="register-logo">
+                    <a href="./"><img src="./assets/image/logo-2.png" alt=""></a>
+                </div>
+
+                <form action="">
+                    <div class="register-head mb-4">
+                        <h4>Verify Email</h4>
+                        <p>Please enter the 6 digit code that was sent to your email.</p>
+                    </div>
+                      <div class="register-group mb-3">
+                          <input type="email" placeholder=" " required>
+                          <label for="">Enter Code</label>
+                      </div>
+                       <div class="register-cta mb-3">
+                            <a href="">
+                                <button type="button" class="main-btn w-100">Verify <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                        <path fill="currentColor" d="M5.47 17.47a.75.75 0 1 0 1.06 1.06zm1.06 1.06l12-12l-1.06-1.06l-12 12z" opacity="0.5" />
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 6h9v9" />
+                                    </g>
+                                </svg></button>
+                            </a>
+                        </div>
+                </form>
+            </div>
         </div>
     </div>
- </div>
-<!-- ========================================= end of register section ============================== -->
+ </section>
+<!-- ================================= end of register section =============================== -->
+
 <?php 
     require_once('./script.php');
 ?>
+
+</body>
+</html>

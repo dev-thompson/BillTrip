@@ -1,8 +1,71 @@
 @media (max-width:1000px) {
-    .register-right{
+    .register-left{
         display: none;
     }
-    .register-left {
+    .register-right {
         width: 100%;
     }
+    .all-register {
+        background-color: #f0f0f0;
+    }
 }
+
+@media (max-width:600px) {
+    .register-right{
+        padding: 60px 0;
+    }
+    .register-right-content {
+        background-color: var(--body);
+        padding: 20px;
+        border-radius: 15px;
+    }
+}
+
+
+  @media (max-width: 768px) {
+        .about-title {
+          font-size: 4.5rem;
+        }
+
+        .card {
+          width: 200px;
+          height: 280px;
+        }
+
+        .card.left-2 {
+          transform: translateX(-250px) scale(0.8) translateZ(-300px);
+        }
+
+        .card.left-1 {
+          transform: translateX(-120px) scale(0.9) translateZ(-100px);
+        }
+
+        .card.right-1 {
+          transform: translateX(120px) scale(0.9) translateZ(-100px);
+        }
+
+        .card.right-2 {
+          transform: translateX(250px) scale(0.8) translateZ(-300px);
+        }
+
+        .member-name {
+          font-size: 2rem;
+        }
+
+        .member-role {
+          font-size: 1.2rem;
+        }
+
+        .member-name::before,
+        .member-name::after {
+          width: 50px;
+        }
+
+        .member-name::before {
+          left: -70px;
+        }
+
+        .member-name::after {
+          right: -70px;
+        }
+      }

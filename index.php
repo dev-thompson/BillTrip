@@ -1,28 +1,10 @@
 <?php 
     require_once('./header.php');
-    require_once('./header.php');
+    require_once('./navbar.php');
+    
 ?>
 
-<!-- ================================== navbar section ======================================= -->
- <section class="all-navbar">
-    <div class="navbar-content margin">
-        <div class="nav-left">
-            <img width="150" src="./assets/image/logo-1.png" alt="">
-        </div>
-        <div class="nav-right">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>
-            <a href="#">Contact Us</a>
-            <div class="nav-cta">
-                <a href="./login.php">
-                    <button class="nav-btn">Get Started</button>
-                </a>
-            </div>
-        </div>
-    </div>
- </section>
-<!-- ================================== end of navbar section ======================================= -->
+
 
 <!-- ====================================== hero section ============================================= -->
  <section class="all-hero">
@@ -43,7 +25,7 @@
                 </p>
             </div>
             <div class="hero-cta">
-                <a href="./login.php">
+                <a href="./login">
                     <button class="nav-btn w-50 py-4">Open a Free Account</button>
                 </a>
             </div>
@@ -104,7 +86,7 @@
 <!-- ===================================== end of account section =========================================  -->
 
 <!-- ====================================== about section ===================================== -->
- <div class="all-about">
+ <section class="all-about">
     <p class="about">About <span>Pay</span>flo</p>
     <div class="about-content margin">
         <div class="about-left" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
@@ -133,13 +115,13 @@
                 <label>Access Your Financial Transactions Anytime, Anywhere</label>
             </div>
             <div class="contact-cta">
-                <a href="">
-                    <button class="about-btn w-50 py-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">Contact Us</button>
+                <a href="./about-us">
+                    <button class="about-btn w-50 py-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">Discover More</button>
                 </a>
             </div>
         </div>
     </div>
- </div>
+ </section>
 <!-- ====================================== end of about section ===================================== -->
 
 <!-- ==================================== service section ====================================== -->
@@ -204,6 +186,56 @@
  </section>
 <!-- ==================================== end of service section ====================================== -->
 
+<!-- ========================== team section ================================ -->
+    <div class="all-team py-5">
+        <div class="feature-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <p class="fs-3">Our Team</p>
+            
+        </div>
+
+        <div class="carousel-container">
+        <button class="nav-arrow left"><i class="fa fa-chevron-left"></i></button>
+        <div class="carousel-track">
+            <div class="card" data-index="0">
+                <img src="./assets/team/ceo.jpg" alt="Team Member 1"/>
+            </div>
+            <div class="card" data-index="1">
+                <img src="./assets/team/pay-2.avif" alt="Team Member 2"/>
+            </div>
+            <div class="card" data-index="2">
+                <img src="./assets/team/pay-3.avif" alt="Team Member 3"/>
+            </div>
+            <div class="card" data-index="3">
+                <img src="./assets/team/pay-4.avif" alt="Team Member 4"/>
+            </div>
+            <div class="card" data-index="4">
+                <img src="./assets/team/pay-5.avif" alt="Team Member 5"/>
+            </div>
+            <div class="card" data-index="5">
+                <img src="./assets/team/pay-6.avif" alt="Team Member 6"/>
+            </div>
+        </div>
+        <button class="nav-arrow right"><i class="fa fa-chevron-right"></i></button>
+        </div>
+
+        <div class="member-info">
+        <h2 class="member-name">Jo Nh</h2>
+        <p class="member-role">Founder</p>
+        </div>
+
+        <div class="dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+        <div class="dot" data-index="4"></div>
+        <div class="dot" data-index="5"></div>
+        </div>
+    </div>
+<!-- ========================== end of team section ================================ -->
+
+
+
 <!-- ================================= manage section ====================================== -->
  <section class="all-hero">
     <div class="manage-content margin">
@@ -238,8 +270,52 @@
     </div>
  </section>
 <!-- ================================= end of manage section ====================================== -->
-    
+
+
+<!-- ============================================ we do section ============================================== -->
+ <section class="features-wrapper">
+    <div class="feature-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <p>NEED MORE HELP?</p>
+        <h3>
+            <span class="fs-2">Leading, Trusted. Enabling Growth.</span>
+            
+        </h3>
+    </div>
+  <div class="features-container margin">
+    <div class="feature up" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+      <img src="./assets/image/need-sales-icon.png" alt="Payment Solution" />
+      <h4>Sales</h4>
+      <p>Get in touch with our sales team to learn more about our products/services and how they can benefit your business.</p>
+      <a href="#">
+        <button class="about-btn py-2" style="font-size: 13px;">Contact Sales</button>
+      </a>
+    </div>
+
+    <div class="feature down">
+      <img src="./assets/image/need-more-icon2.png" alt="Growth Business" />
+      <h4>Help & Support</h4>
+      <p>Find answers to frequently asked questions, troubleshooting guides, and contact information for support.</p>
+      <a href="#">
+        <button class="about-btn py-2" style="font-size: 13px;">Get Support</button>
+      </a>
+    </div>
+
+    <div class="feature up" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+      <img src="./assets/image/need-more-icon-3.png" alt="Connected People" />
+      <h4>Article & News</h4>
+      <p>Stay up-to-date with the latest company news, and product updates. Read articles, and news stories from our experts.</p>
+      <a href="#">
+        <button class="about-btn py-2" style="font-size: 13px;">Read Article</button>
+      </a>
+    </div>
+  </div>
+ </section>
+
+<!-- ============================================ end of we do section ============================================== -->
+
+
 <?php 
+    require_once('./footer.php');
     require_once('./script.php');
 ?>
 </body>
