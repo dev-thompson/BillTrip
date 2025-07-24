@@ -2,18 +2,23 @@
  <section class="all-navbar">
     <div class="navbar-content margin">
         <div class="nav-left">
-            <img width="150" src="./assets/image/logo-1.png" alt="">
+            <a href="./"><img src="./assets/image/logo-1.png" alt=""></a>
         </div>
         <div class="nav-right">
             <a href="./">Home</a>
             <a href="./about-us">About</a>
-            <a href="#">Service</a>
-            <a href="#">Contact Us</a>
+            <a href="./all-rooms">Rooms</a>
+            <!-- <a href="#">Contact Us</a> -->
             <div class="nav-cta">
                 <a href="./login">
-                    <button class="nav-btn">Get Started</button>
+                    <button class="nav-btn">Book Now</button>
                 </a>
             </div>
+        </div>
+        <div class="bars">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
  </section>

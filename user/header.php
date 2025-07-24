@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/image/favicon-2.png" type="image/x-icon">
+    <link rel="icon" href="./assets/image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/icons/css/all.css">
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -14,12 +14,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/calendar/dist/index.global.js"></script>
     <title>
         <?php 
             if(isset($title)) {
-                echo $title . ' | '. 'Pay Bills, Recharge with Ease';
+                echo $title . ' | '. 'Book_Room, Pay Bills, Stay with Ease';
             }else {
-                echo "User Dashboard | Pay Bills, Recharge with Ease";
+                echo "Dashboard | Book_Room, Pay Bills, Stay with Ease";
             }
         ?>
     </title>

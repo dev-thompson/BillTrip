@@ -1,6 +1,7 @@
 <?php 
     require_once('./header.php');
-    require_once('./navbar.php');
+    require_once('./fixed-navbar.php');
+    require_once('./sidebar.php');
     
 ?>
 
@@ -8,186 +9,210 @@
 
 <!-- ====================================== hero section ============================================= -->
  <section class="all-hero">
+    <?php 
+        require_once('./navbar.php');
+        
+    ?>
     <div class="hero-content margin">
         <div class="hero-left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <p>
-                <span>Simple. Transparent. Secure</span>
-            </p>
+            
             <h2>
-                <span>The Smart Way for</span>
-                <span>Online Payment</span>
-                <span>Solution.</span>
+                <span>Experience comfort,</span>
+                <span>luxury, and</span>
+                <span>unforgettable stays.</span>
             </h2>
             <div class="des">
                 <p>
-                    <span>Easily settle electricity, water, and other bills, and top up your airtime</span>
-                    <span>and data subscriptions.</span>
+                    <span>Book your perfect escape in the heart of the city or by the beach – where</span>
+                    <span>hospitality meets elegance.</span>
                 </p>
             </div>
             <div class="hero-cta">
-                <a href="./login">
-                    <button class="nav-btn w-50 py-4">Open a Free Account</button>
+                <a href="./all-rooms">
+                    <button class="view-room py-4">View Our Rooms</button>
                 </a>
             </div>
             
-        </div>
-        <div class="hero-right">
-            <img src="./assets/image/banner-4.png" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
         </div>
     </div>
  </section>
 <!-- ====================================== end of hero section ============================================= -->
 
-<!-- ============================================ we do section ============================================== -->
- <section class="features-wrapper">
-    <div class="feature-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <p>What We Do</p>
-        <h3>
-            <span>Get Ready To Have Best Smart Payments in</span>
-            <span>The World</span>
-        </h3>
-    </div>
-  <div class="features-container margin">
-    <div class="feature up" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-      <img src="./assets/image/credit-debit-icon.png" alt="Payment Solution" />
-      <h4>Payment Solution</h4>
-      <p>Payflo's payment solution provides a secure, convenient, and efficient way to pay bills, recharge airtime, and purchase data subscriptions.</p>
-    </div>
-
-    <div class="feature down">
-      <img src="./assets/image/growth-icon.png" alt="Growth Business" />
-      <h4>Growth Business</h4>
-      <p>Payflo empowers businesses to grow by streamlining bill payments, reducing administrative burdens, and increasing customer satisfaction.</p>
-    </div>
-
-    <div class="feature up" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-      <img src="./assets/image/connected-people-icon.png" alt="Connected People" />
-      <h4>Connected People</h4>
-      <p>Stay connected with Payflo! Our platform enables individuals to easily pay bills, recharge airtime, and purchase data subscriptions, anytime, anywhere.</p>
-    </div>
-  </div>
- </section>
-
-<!-- ============================================ end of we do section ============================================== -->
-
-<!-- ===================================== account section =========================================  -->
- <section class="all-account">
-    <div class="account-content margin">
-        <div class="account-left" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-            <img src="./assets/image/personal-account-icon-2.png" alt="">
-            <label>PERSONAL ACCOUNT</label>
-        </div>
-        <div class="account-left" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-            <img src="./assets/image/Untitled-10d.png" alt="">
-            <label>BUSINESS ACCOUNT</label>
-        </div>
-    </div>
- </section>
-<!-- ===================================== end of account section =========================================  -->
-
-<!-- ====================================== about section ===================================== -->
+<!-- ================================================ about section ================================== -->
  <section class="all-about">
-    <p class="about">About <span>Pay</span>flo</p>
     <div class="about-content margin">
-        <div class="about-left" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-            <img src="./assets/image/home-2-about-payment-img.jpg" alt="Background Image" class="img-back">
-            <img src="./assets/image/home-2-about-t-img.jpg" alt="Foreground Image" class="img-front">
+        <div class="about-left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <h1>Our History</h1>
+            <p>From the moment you arrive, our dedicated team is committed to providing personalized service designed to make you feel at home. Whether you're traveling for business or leisure, our carefully designed rooms and suites offer a relaxing escape, complete with plush bedding, high-speed Wi-Fi, and stunning city or ocean views.</p>
+            <p>Indulge in culinary delights at our on-site restaurant, unwind at our rooftop lounge, or recharge in our fully equipped fitness center. With state-of-the-art conference facilities and flexible event spaces, we’re also the perfect choice for meetings, weddings, and special occasions.</p>
         </div>
         <div class="about-right">
-            <div class="about-right-head" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-                <img width="130" src="./assets/image/home-2-about-content-img.png" alt="">
-                <p> Simplifying bill payments, airtime recharge, and data subscriptions with ease and convenience.</p>
+            <div class="about-image">
+                <img src="./assets/image/hotel-about.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             </div>
-            <div class="about-item mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <i class="far fa-folder-open"></i>
-                <label>Navigate Our Platform With Ease</label>
+            <div id="counters" class="hotel-details mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="hotel-item">
+                    <h1 id="counter1">0</h1>
+                    <p>Hotel Rooms</p>
+                </div>
+                <div class="hotel-item">
+                    <h1 id="counter2">0</h1>
+                    <p>Activities</p>
+                </div>
+                <div class="hotel-item">
+                    <h1 id="counter3">0</h1>
+                    <p>Restaurants</p>
+                </div>
             </div>
-            <div class="about-item mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <i class="fa fa-user-shield"></i>
-                <label>We Prioritize The Safety Of Your Financial Data.</label>
+        </div>
+    </div>
+ </section>
+<!-- ================================================ end of about section ================================== -->
+
+<!-- ======================================== regions section ============================================= -->
+ <section class="all-region">
+    <div class="region-content margin">
+        <div class="region-left">
+            <h1>The Grand Regions</h1>
+            <div class="region-image">
+                <img src="./assets/image/room-4.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                <img class="float-image" src="./assets/image/room-1.avif" alt="">
             </div>
-            <div class="about-item mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <i class="fa fa-business-time"></i>
-                <label>Connect With Loved Ones Or Businesses Globally.</label>
-            </div>
-            <div class="about-item mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <i class="fa fa-file-invoice-dollar"></i>
-                <label>Access Your Financial Transactions Anytime, Anywhere</label>
-            </div>
-            <div class="contact-cta">
-                <a href="./about-us">
-                    <button class="about-btn w-50 py-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">Discover More</button>
+        </div>
+        <div class="region-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <p>At our hotel, we offer more than just a place to stay — we deliver a complete hospitality experience designed around your comfort, convenience, and satisfaction. From the moment you arrive, our 24/7 concierge service is available to handle everything from personalized guest requests to travel arrangements and local recommendations. Our elegantly designed rooms and suites provide a perfect blend of modern luxury and timeless comfort, featuring plush bedding, high-speed Wi-Fi, smart entertainment, and stunning city or landscape views.
+            Guests are invited to indulge in unforgettable dining experiences at our signature restaurant, where international cuisine meets local flavors, or relax with handcrafted cocktails at the rooftop lounge offering panoramic city views.</p>
+            <div class="region-cta">
+                <a href="./login">
+                    <button class="view-room py-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">Book Now</button>
                 </a>
             </div>
         </div>
     </div>
  </section>
-<!-- ====================================== end of about section ===================================== -->
+<!-- ======================================== end of regions section ============================================= -->
 
-<!-- ==================================== service section ====================================== -->
- <section class="all-service">
-    <div class="feature-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <p>Explore Our Services</p>
-        <h3>
-            <span>Smart Solution for Your Payment</span>
-        </h3>
+<!-- ======================================= room section ================================== -->
+ <section class="all-room">
+    <div class="room-header mb-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+        <h6>OUR ROOMS</h6>
+        <h1>Accomodation</h1>
     </div>
-    <div class="service-image mt-5 margin" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
-    <div class="service-content margin">
-        <div class="service-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <img src="./assets/image/services-payment-management-icon.png" alt="">
-            <div class="service-description">
-                <h4>Payment Management</h4>
-                <p>Streamline bill payments, airtime recharge, and data subscriptions, ensuring timely transactions and reduced hassle.</p>
-                <div class="service-cta">
-                    <a href="">
-                        <button class="card-btn mt-3 py-2">Read More</button>
-                    </a>
-                </div>
+    <div class="room-content margin">
+        <div class="room-items" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="room-wrapper">
+                <img src="./assets/image/1.webp" alt="">
+            </div>
+            <div class="room-title">
+                <h5>Family Suite</h5>
+                <p>
+                    <span>2 Guests</span>
+                    <span>35 Feets Size</span>
+                    <span><i class="fa fa-dollar-sign"></i>359</span>
+                </p>
+            </div>
+            <div class="room-cta">
+                <a href="./login">
+                    <button class="room-btn w-100">Book Now</button>
+                </a>
             </div>
         </div>
-        <div class="service-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <img src="./assets/image/services-dashboard-icon.png" alt="">
-            <div class="service-description">
-                <h4>Personal Dashboard</h4>
-                <p>Managing payments, tracking transactions, and monitoring account activity, offering a seamless user experience.</p>
-                <div class="service-cta">
-                    <a href="">
-                        <button class="card-btn mt-3 py-2">Read More</button>
-                    </a>
-                </div>
+        <div class="room-items" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="room-wrapper">
+                <img src="./assets/image/4.webp" alt="">
+            </div>
+            <div class="room-title">
+                <h5>Deluxe Room</h5>
+                <p>
+                    <span>2 Guests</span>
+                    <span>35 Feets Size</span>
+                    <span><i class="fa fa-dollar-sign"></i>129</span>
+                </p>
+            </div>
+            <div class="room-cta">
+                <a href="./login">
+                    <button class="room-btn w-100">Book Now</button>
+                </a>
             </div>
         </div>
-        <div class="service-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <img src="./assets/image/integrated-payment-icon.png" alt="">
-            <div class="service-description">
-                <h4>Integrated Payments</h4>
-                <p>Bill payments, airtime recharge, and data subscriptions into a single, user-friendly interface, simplifying financial management.</p>
-                <div class="service-cta">
-                    <a href="">
-                        <button class="card-btn mt-3 py-2">Read More</button>
-                    </a>
-                </div>
+        <div class="room-items" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="room-wrapper">
+                <img src="./assets/image/6.webp" alt="">
+            </div>
+            <div class="room-title">
+                <h5>Alpine Retreat</h5>
+                <p>
+                    <span>2 Guests</span>
+                    <span>2 35 Feets Size</span>
+                    <span><i class="fa fa-dollar-sign"></i>499</span>
+                </p>
+            </div>
+            <div class="room-cta">
+                <a href="./login">
+                    <button class="room-btn w-100">Book Now</button>
+                </a>
             </div>
         </div>
-        <div class="service-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <img src="./assets/image/business-tracking-icon.png" alt="">
-            <div class="service-description">
-                <h4>Business Tracking</h4>
-                <p>Monitor and manage payments, track transactions, and analyze financial activity, driving informed decision-making.</p>
-                <div class="service-cta">
-                    <a href="">
-                        <button class="card-btn mt-3 py-2">Read More</button>
-                    </a>
-                </div>
+        <div class="room-items" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="room-wrapper">
+                <img src="./assets/image/2.webp" alt="">
+            </div>
+            <div class="room-title">
+                <h5>Summit Suite</h5>
+                <p>
+                    <span>2 Guests</span>
+                    <span>2 35 Feets Size</span>
+                    <span><i class="fa fa-dollar-sign"></i>129</span>
+                </p>
+            </div>
+            <div class="room-cta">
+                <a href="./login">
+                    <button class="room-btn w-100">Book Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="room-items" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="room-wrapper">
+                <img src="./assets/image/g_4.webp" alt="">
+            </div>
+            <div class="room-title">
+                <h5>Timber Haven</h5>
+                <p>
+                    <span>2 Guests</span>
+                    <span>2 35 Feets Size</span>
+                    <span><i class="fa fa-dollar-sign"></i>199</span>
+                </p>
+            </div>
+            <div class="room-cta">
+                <a href="./login">
+                    <button class="room-btn w-100">Book Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="room-items" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="room-wrapper">
+                <img src="./assets/image/3.webp" alt="">
+            </div>
+            <div class="room-title">
+                <h5>Cliffside Chalet</h5>
+                <p>
+                    <span>2 Guests</span>
+                    <span>2 35 Feets Size</span>
+                    <span><i class="fa fa-dollar-sign"></i>349</span>
+                </p>
+            </div>
+            <div class="room-cta">
+                <a href="./login">
+                    <button class="room-btn w-100">Book Now</button>
+                </a>
             </div>
         </div>
     </div>
  </section>
-<!-- ==================================== end of service section ====================================== -->
+<!-- ======================================= end of room section ================================== -->
 
 <!-- ========================== team section ================================ -->
-    <div class="all-team py-5">
+    <div class="all-team">
         <div class="feature-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <p class="fs-3">Our Team</p>
             
@@ -200,7 +225,7 @@
                 <img src="./assets/team/ceo.jpg" alt="Team Member 1"/>
             </div>
             <div class="card" data-index="1">
-                <img src="./assets/team/pay-2.avif" alt="Team Member 2"/>
+                <img src="./assets/team/pay-7.jpg" alt="Team Member 2"/>
             </div>
             <div class="card" data-index="2">
                 <img src="./assets/team/pay-3.avif" alt="Team Member 3"/>
@@ -236,44 +261,8 @@
 
 
 
-<!-- ================================= manage section ====================================== -->
- <section class="all-hero">
-    <div class="manage-content margin">
-        <div class="manage-left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <h2>Manage Everything in Your Hand</h2>
-            <div class="manage-left-content mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <p><img src="./assets/image/user-friendly-icon.png" alt=""></p>
-                <div class="manage-item">
-                    <h6>User Friendly</h6>
-                    <p>Payflo's intuitive interface makes it easy for users to navigate and manage payments, ensuring a seamless experience for all.</p>
-                </div>
-            </div>
-            <div class="manage-left-content mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <p><img src="./assets/image/best-support-icon.png" alt=""></p>
-                <div class="manage-item">
-                    <h6>Best Support</h6>
-                    <p>Payflo's dedicated support team is available to assist with any questions or concerns, providing prompt and helpful solutions to ensure user satisfaction.</p>
-                </div>
-            </div>
-            <div class="manage-left-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <p><img src="./assets/image/secure-icon.png" alt=""></p>
-                <div class="manage-item">
-                    <h6>Secure</h6>
-                    <p>Payflo prioritizes security, utilizing advanced encryption and robust measures to protect user data and transactions, giving users peace of mind.</p>
-                </div>
-            </div>
-        </div>
-         <div class="hero-right">
-            <img src="./assets/image/banner-3.png" alt="" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-        </div>
-
-    </div>
- </section>
-<!-- ================================= end of manage section ====================================== -->
-
-
 <!-- ============================================ we do section ============================================== -->
- <section class="features-wrapper">
+ <!-- <section class="features-wrapper">
     <div class="feature-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <p>NEED MORE HELP?</p>
         <h3>
@@ -309,9 +298,11 @@
       </a>
     </div>
   </div>
- </section>
+ </section> -->
 
 <!-- ============================================ end of we do section ============================================== -->
+
+
 
 
 <?php 

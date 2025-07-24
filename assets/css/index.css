@@ -56,17 +56,47 @@ label {
     /* font-weight: bold; */
 }
 .nav-btn{
-    border: none;
+    border: 1px solid #696767;
     outline: none;
-    background: var(--main);
+    backdrop-filter: blur(2px);
+    background: transparent;
     padding: 10px 20px;
     color: white;
+
     border-radius: 5px;
-    transition: background 1s ease-in-out ;
+    /* transition: background 1s ease-in-out ; */
 }
-.nav-btn:hover {
+.view-room{
+    border: 1px solid #696767;
+    outline: none;
+    backdrop-filter: blur(2px);
+    background: transparent;
+    padding: 10px 20px;
+    color: white;
+    width: 50%;
+    border-radius: 5px;
+}
+.nav-btn-1{
+    border: none;
+    outline: none;
+    background:var(--main);
+    padding: 10px 20px;
+    color: var(--body);
+    border-radius: 5px;
+    width: 100%;
+}
+.room-btn{
+    border:none;
+    outline: none;
+    background:#11171b;
+    padding: 17px 20px;
+    color: var(--body);
+    font-size: 13px;
+    border-radius: 0 0 8px 8px;
+}
+/* .nav-btn:hover {
     background: var(--secondary);
-}
+} */
 .card-btn{
     border:none;
     outline: none;
@@ -94,6 +124,18 @@ label {
 }
 .about-btn:hover {
     background: var(--main);
+}
+.about-hero h1 {
+    color: var(--body);
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-hero {
+    padding: 50px 0;
+}
+.about-hero a, .about-hero label, .about-hero p{
+    color: var(--body);
+    font-size: 13px;
 }
 /* ================================ end of global design =========================== */
 
@@ -125,12 +167,13 @@ label {
     border-radius: 15px;
 }
 .register-logo img{
-    width: 180px;
+    width: 130px;
 }
 .register-logo {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    
 }
 .register-group input, .register-group select {
     border: 1px solid #e0e0e0;
@@ -261,12 +304,91 @@ label {
 }
 /* ============================================= end of register section ======================================= */
 
+/* ====================== sidebar section ======================== */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    height: 100vh;
+    background-color:var(--body);
+    width: 25%;
+    /* border-right: 1px solid #ddd; */
+    padding:10px 15px;
+    color: var(--text);
+    transition: left 1s ease;
+    display: none;
+    z-index: 10000;
+}
+#sidebar.show{
+    left: 0;
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+.side-logo{
+    justify-self: center;
+    margin-bottom: 20px;
+}
+.side-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.side-item a{
+    color: var(--main);
+    font-size: 17px;
+}
+.side-logo img{
+    padding-top: 25px;
+}
+.side-item i{
+    color:var(--dash);
+}
+.bars {
+    cursor: pointer;
+    display: none;
+}
+.bars span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--primary);
+    margin-bottom: 5px;
+    transition: 1s ease;
+}
+.bars span:nth-child(2){
+    width: 15px;
+}
+.bars.show span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.bars.show span:nth-child(2) {
+    opacity: 0;
+}
+.bars.show span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+/* ====================== end of sidebar section ======================== */
+
 /* ================================== navbar section ================================== */
 .all-navbar{
-    background-color:white;
+    background-color:transparent;
     padding: 10px 0;
-    position: sticky;
-    top: 0;
+}
+.all-navbar-1{
+    background-color:var(--body);
+    padding: 10px 0;
+     position: fixed;
+    top: -100px;  /* Hidden initially */
+    left: 0;
+    right: 0;
+    transition: top 0.4s ease;
+    
+    
+}
+.all-navbar-1.show {
+    top: 0;  /* Slide down */
     z-index: 5000;
 }
 .navbar-content {
@@ -274,7 +396,7 @@ label {
     align-items: center;
     justify-content: space-between;
 }
-.nav-right{
+.nav-right, .nav-right-1{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -282,37 +404,40 @@ label {
 }
 .nav-right a{
     font-size: 17px;
+    color: var(--body);
+    font-weight: 600;
+}
+.nav-right-1 a{
+    font-size: 17px;
     color: var(--text);
+    /* font-weight: 600; */
+}
+.nav-left img {
+    width: 150px;
 }
 /* ================================== end of navbar section ================================== */
 
 /* ====================================== hero section ============================== */
 .all-hero{
-    padding: 50px 0 0 0 ;
-    background: linear-gradient(to left, rgba(110, 236, 231, 0.7), rgba(240, 239, 239, 0.7)), url(../image/form.jpg) no-repeat center center/cover;
+    background: url(../image/hotel-8.png) no-repeat center center/cover;
+    /* height:100vh; */
+    padding: 0 0 100px 0;
 }
 .all-hero-2{
     padding: 20px 0;
     background: linear-gradient(to left, rgb(17, 7, 52), rgba(22, 9, 71, 0.79)), url(../image/form.jpg) no-repeat center center/cover;
-}
-.all-about{
-    padding: 50px 0 0 0 ;
-    background: linear-gradient(to right, rgba(156, 220, 218, 0.7), rgb(253,239,228)), url(../image/form.jpg) no-repeat center center/cover;
+    
 }
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+    padding: 70px 0 0 0 ;
 }
 .hero-right img{
     width: 100%;
 }
-.hero-left {
-    width: 50%;
-}
-.hero-right {
-    width: 50%;
-}
+
 .hero-left p span{
     font-size: 20px;
     text-transform: uppercase;
@@ -321,15 +446,14 @@ label {
 }
 .hero-left h2 span{
     display: block;
-    font-size: 60px;
-    font-weight: bolder;
-    color: var(--black);
-}
-.hero-left h2 span:nth-child(2){
-    color: var(--primary);
+    font-size: 75px;
+    color: var(--body);
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
 .des p span {
-    color: var(--text);
+    color: var(--body);
     font-size: 17px;
     display: block;
     text-transform: unset;
@@ -390,7 +514,7 @@ label {
     margin-bottom:20px;
 }
 .feature-head p{
-    color: var(--secondary);
+    color: var(--text);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 17px;
@@ -438,131 +562,120 @@ label {
 /* ======================== end of account section =================================== */
 
 /* ====================================== about section ================================ */
-.about-left{
-    position: relative;
-    width: fit-content;
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
 .about-content {
-    padding: 30px 0 100px 0;
     display: flex;
-    align-items: flex-start;
-}
-.img-back {
-  width: 55%;
-  border: 4px solid white;
-  border-radius: 60px 0 0 0 ;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-.img-front {
-  position: absolute;
-  top: 100px;
-  left: 220px;
-  width: 55%;
-  border-radius: 0 0 60px 0 ;
-  border: 4px solid white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  animation: move 40s linear infinite;
-}
-@keyframes move {
-    0% {
-        transform: translateY(0%);
-    }
-    10% {
-        transform: translateY(-15%);
-    }
 }
 .about-right{
-    width: 50%;
-    padding: 0 50px;
+    width: 55%;
+    background-color: #f5f5f5;
 }
-.about-right-head p{
+.about-left{
+    width: 45%;
+    padding: 60px 50px;
+}
+.about-left h1 {
+    font-size: 65px;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     color: var(--text);
-    padding: 25px 0 5px 0;
-}
-.about {
     text-align: center;
-    color: var(--primary);
-    font-size: 25px;
-    margin-bottom: 30px;
 }
-.about span{
+.about-left p {
     color: var(--text);
-}
-.about-item {
-    display:flex;
-    align-items: center;
-    gap: 10px;
-}
-.about-item i{
-    color: var(--primary);
-    font-size: 1.3rem;
-}
-.about-item label{
+    line-height: 35px;
     font-size: 17px;
+}
+.about-right img {
+    width: 60%;
+    display: flex;
+    justify-self: center;
+    padding: 3px;
+    background-color: var(--body);
+    position: relative;
+    z-index: 1000;
+    bottom: 50px;
+}
+.hotel-details {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+.hotel-item {
+    text-align: center;
+}
+.hotel-item h1 {
+    font-size: 70px;
     color: var(--text);
 }
-.about-hero-right img{
-    width: 80%;
-}
-.about-hero-right{
-    width: 40%;
-}
-.about-hero-left{
-    width: 60%;
-}
-.about-hero-left span{
-    color:#ccc;
-    font-weight: bold;
-}
-.about-hero-left span a{
-    color:#ccc;
-    font-weight: bold;
-}
-.about-hero-left h1{
-    color:var(--body);
-    font-weight: bold;
-    font-size: 50px;
+.hotel-item p{
+    color: var(--text);
+    /* font-size: 16px; */
 }
 /* ====================================== end of about section ================================ */
 
-/* ======================================= service section ================================================ */
-.service-image{
-    background: url(../image/our-services-image.jpg) no-repeat center center/cover;
-    height:70vh;
-    margin: 0 8%;
-    border-radius: 10px;
+/* ===================================== region section ======================================== */
+.all-region {
+    background: #11171b;
+    padding: 90px 0;
 }
-.all-service {
-    padding: 50px 0;
-}
-.service-item {
-    display:flex;
+.region-content {
+    display: flex;
     align-items: flex-start;
-    gap: 25px;
-    background: white;
-    padding: 30px;
-    border-radius: 6px;
-    /* border: 1px solid var(--secondary); */
-    box-shadow: 0px 2px #ff924a;
-    height: fit-content;
 }
-.service-description h4{
-    color: var(--black);
+.region-left{
+    width: 55%;
+    color: var(--body);
 }
-.service-description p{
-    color: var(--text);
-    font-size: 15px;
+.region-left h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
 }
-.service-content {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.region-right {
+    width: 45%;
+    color: var(--body);
+    padding: 0 40px;
 }
-/* ======================================= end of service section ================================================ */
+.region-right p{
+    line-height: 30px;
+    font-size: 17px;
+}
+.region-image img:nth-child(1) {
+    width: 100%;
+    border-radius: 7px;
+}
+.region-image {
+    position: relative; 
+}
+.float-image{
+    width: 350px;
+    padding: 1px;
+    background-color: var(--body);
+    position: absolute;
+    right: 30px;
+    bottom: -50px;
+    animation: moveX 40s linear infinite;
+}
+@keyframes moveX {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(1%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* ===================================== end of region section ======================================== */
 
 /* =================================== manage section ============================= */
 .manage-left h2{
@@ -601,8 +714,14 @@ label {
     gap: 5px;
     
 }
-.footer-center {
-    text-align: center;
+.footer-right i {
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+.footer-right p {
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 .footer-content {
     display: flex;
@@ -613,9 +732,8 @@ label {
     display: block;
 }
 .all-footer {
-    margin-top: 90px;
     padding: 50px 0;
-    border-top: 1px solid var(--secondary);
+    /* border-top: 1px solid #ccc; */
 }
 .footer-left p{
     color: var(--text);
@@ -623,7 +741,7 @@ label {
 }
 .footer-center h4{
     color: var(--text);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 16px;
 }
 .footer-center i{
@@ -637,12 +755,12 @@ label {
 }
 .footer-right h4{
     color: var(--text);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 16px;
 }
 .foot-date {
     padding: 25px 0 12px 0;
-    background: var(--secondary);
+    background: var(--main);
 }
 .foot-date h5{
     font-size: 16px;
@@ -754,12 +872,12 @@ label {
 
       .member-info {
         text-align: center;
-        margin-top: 40px;
+        /* margin-top: 40px; */
         transition: all 0.5s ease-out;
       }
 
       .member-name {
-        color:var(--secondary);
+        color:var(--text);
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 10px;
@@ -777,7 +895,7 @@ label {
         top: 100%;
         width: 100px;
         height: 2px;
-        background: var(--secondary);
+        background: var(--main);
       }
 
       .member-name::before {
@@ -816,7 +934,7 @@ label {
       }
 
       .dot.active {
-        background: var(--secondary);
+        background: var(--main);
         transform: scale(1.2);
       }
 
@@ -824,7 +942,7 @@ label {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: var(--secondary);
+        background: var(--main);
         color: white;
         width: 40px;
         height: 40px;
@@ -860,7 +978,8 @@ label {
 
     
       .all-team {
-        min-height: 100vh;
+        padding:50px 0;
+        /* min-height: 100vh; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -869,3 +988,60 @@ label {
         overflow: hidden;
       }
 /* ================================== end of team section ======================================= */
+
+/* =========================================== room section ======================================== */
+.room-header {
+    text-align: center;
+    color: var(--text);
+}
+.room-header h6 {
+    font-weight: bold;
+}
+.room-header h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.room-title h5 {
+    font-weight: bold;
+    font-size: 25px;
+}
+.room-title {
+    color: var(--text);
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px 0 10px 0;
+}
+.room-title p {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    font-size: 15px;
+}
+.room-wrapper {
+    width: 100%;
+    object-fit: cover;
+    transition: 1s ease;
+}
+.room-wrapper img{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    border-radius: 8px 8px 0 0 ;
+}
+.room-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.room-items:hover .room-wrapper{
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.room-items {
+    border-radius: 8px;
+}
+.all-room {
+    padding: 60px 0;
+}
+/* =========================================== end of room section ======================================== */

@@ -1,6 +1,6 @@
   <div class="dashboard-left">
             <div class="dash-left-logo">
-                <img src="./assets/image/logo-4.png" alt="">
+                <img src="./assets/image/logo-1.png" alt="">
             </div>
 
             <div class="dash-sidebar-content mt-3">
@@ -8,7 +8,7 @@
                     <label>GENERAL</label>
                 </span>
 
-                <a href="./"><div class="sidebar-items" onclick="toggleMenu('dashboard', event)">
+                <a href="./"><div class="sidebar-items" onclick="toggleMenu('overview', event)">
                     <div class="sidebar-item-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <g fill="none" stroke="currentColor" stroke-width="1.5">
@@ -19,7 +19,7 @@
                     <label>Overview</label>
                     </div>
                 </div></a>
-                
+
                 <a href="./my-wallet"><div class="sidebar-items" onclick="toggleMenu('wallet', event)">
                     <div class="sidebar-item-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -34,21 +34,21 @@
                     <label>My Wallet</label>
                     </div>
                 </div></a>
-                
-                <div class="sidebar-items" onclick="toggleMenu('pricing', event)">
+
+                <a href="./services"><div class="sidebar-items" onclick="toggleMenu('services', event)">
                     <div class="sidebar-item-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <g fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M4.728 16.137c-1.545-1.546-2.318-2.318-2.605-3.321c-.288-1.003-.042-2.068.45-4.197l.283-1.228c.413-1.792.62-2.688 1.233-3.302s1.51-.82 3.302-1.233l1.228-.284c2.13-.491 3.194-.737 4.197-.45c1.003.288 1.775 1.061 3.32 2.606l1.83 1.83C20.657 9.248 22 10.592 22 12.262c0 1.671-1.344 3.015-4.033 5.704c-2.69 2.69-4.034 4.034-5.705 4.034c-1.67 0-3.015-1.344-5.704-4.033z" opacity="0.5" />
-                            <path stroke-linecap="round" d="M15.39 15.39c.585-.587.664-1.457.176-1.946s-1.359-.409-1.945.177c-.585.586-1.456.665-1.944.177s-.409-1.359.177-1.944m3.535 3.535l.354.354m-.354-.354c-.4.401-.935.565-1.389.471m-2.5-4.36l.354.354m0 0c.331-.332.753-.5 1.146-.497" />
-                            <circle cx="8.607" cy="8.879" r="2" transform="rotate(-45 8.607 8.879)" />
+                            <path d="M9 4.5H8c-2.357 0-3.536 0-4.268.732S3 7.143 3 9.5v5c0 2.357 0 3.535.732 4.268S5.643 19.5 8 19.5h1" opacity="0.5" />
+                            <path d="M9 6.476c0-2.293 0-3.44.707-4.067s1.788-.439 3.95-.062l2.33.407c2.394.417 3.591.626 4.302 1.504c.711.879.711 2.149.711 4.69v6.105c0 2.54 0 3.81-.71 4.689c-.712.878-1.91 1.087-4.304 1.505l-2.328.406c-2.162.377-3.243.565-3.95-.062S9 19.817 9 17.524z" />
+                            <path stroke-linecap="round" d="M12 11v2" opacity="0.5" />
                         </g>
                     </svg>
-                    <label>Pricing</label>
+                    <label>Services</label>
                     </div>
-                </div>
+                </div></a>
 
-                <div class="sidebar-items" onclick="toggleMenu('payment', event)">
+                <a href="./payment-history"><div class="sidebar-items" onclick="toggleMenu('payment', event)">
                     <div class="sidebar-item-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
@@ -61,7 +61,7 @@
                     </svg>
                     <label>Payment History</label>
                     </div>
-                </div>
+                </div></a>
                 
                  <span class="intro">
                     <label>OTHER PAGES</label>
@@ -90,7 +90,7 @@
                     <label>Contact</label>
                     </div>
                 </div>
-                <div class="sidebar-items" onclick="toggleMenu('settings', event)">
+                <a href="./settings"><div class="sidebar-items" onclick="toggleMenu('settings', event)">
                     <div class="sidebar-item-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <g fill="none" stroke="currentColor" stroke-width="1.5">
@@ -100,7 +100,7 @@
                     </svg>
                     <label>Settings</label>
                     </div>
-                </div>
+                </div></a>
 
                 <div class="sidebar-items" onclick="toggleMenu('authentication', event)">
                     <div class="sidebar-item-1">

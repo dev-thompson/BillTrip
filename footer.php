@@ -4,8 +4,8 @@
         <div class="footer-left">
             <a href=""><img width="150" src="./assets/image/logo-2.png" alt=""></a>
             <p>
-                <span>PayFlo - Simplifying bill payments,</span>
-                <span>airtime recharge, and data subscriptions</span>
+                <span>BillTrip - Effortless hotel bookings,</span>
+                <span>data purchases, and bill payments</span>
                 <span>with ease and convenience.</span>
             </p>
             <div class="footer-price">
@@ -14,9 +14,9 @@
         </div>
         <div class="footer-center">
             <h4>Important Link</h4>
-            <a href=""><p><i class=" fa fa-play" style="font-size: 0.5rem;"></i>Home</p></a>
-            <a href=""><p><i class=" fa fa-play" style="font-size: 0.5rem;"></i>About Us</p></a>
-            <a href=""><p><i class=" fa fa-play" style="font-size: 0.5rem;"></i>Price Plan</p></a>
+            <a href="./"><p><i class=" fa fa-play" style="font-size: 0.5rem;"></i>Home</p></a>
+            <a href="./about-us"><p><i class=" fa fa-play" style="font-size: 0.5rem;"></i>About Us</p></a>
+            <a href="./all-rooms"><p><i class=" fa fa-play" style="font-size: 0.5rem;"></i>Rooms</p></a>
         </div>
         <div class="footer-center">
             <h4>Support</h4>
@@ -26,8 +26,8 @@
         </div>
         <div class="footer-right">
             <h4>Get in Touch</h4>
-            <p><strong>Email:</strong> payflosupport@gmail.com</p>
-            <p><strong>Phone:</strong> +2348107723149 || +2349069022856</p>
+            <p> <i class="far fa-envelope"></i> billtripsupport@gmail.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +2348107723149 || +2349069022856</p>
         </div>
     </div>
  </footer>
@@ -35,6 +35,8 @@
     
 <!-- ======================================== foot date section ====================================================== -->
  <div class="foot-date">
-    <h5>Copyright &copy; PayFlo 2025. All Rights Reserved</h5>
+    <h5>Copyright &copy; BillTrip 2025. <span>All Rights Reserved</span></h5>
 </div>
+
+
 <!-- ======================================== end of foot date section ====================================================== -->

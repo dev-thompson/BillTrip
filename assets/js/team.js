@@ -1,6 +1,6 @@
   const teamMembers = [
         { name: "Jo Nh", role: "Founder" },
-        { name: "Michael Steward", role: "Creative Director" },
+        { name: "Adaeze Marylene", role: "Manager" },
         { name: "Emma Rodriguez", role: "Lead Developer" },
         { name: "Julia Gimmel", role: "UX Designer" },
         { name: "Lisa Anderson", role: "Marketing Manager" },

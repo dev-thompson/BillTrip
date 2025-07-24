@@ -30,7 +30,7 @@
                         </div>
                         <label>Available Balance</label>
                         <div class="balance-icon">
-                            <i class="far fa-eye"></i>
+                            <i id="toggleBalance" class="far fa-eye"></i>
                         </div>
                     </div>
                     <div class="history">
@@ -40,10 +40,10 @@
                 
                 <div class="balance-amount">
                     <div class="amount">
-                        <h4>₦<span>5,000.00</span></h4>
+                        <h4 id="balance">₦5,000.00</h4>
                     </div>
                     <div class="amount-cta">
-                        <a href="">
+                        <a href="./fund-account">
                             <button class="add-btn">+ Fund Account</button>
                         </a>
                     </div>
@@ -55,34 +55,34 @@
             <div class="all-tables mt-4">
                     <div class="overview">
                         <h6>Transaction History</h6>
-                        <a href="">See all</a>
+                        <a href="./payment-history">See all</a>
                     </div>
                     <div class="table-responsive">
-                        <table>
+                        <table class="table table-hover custom-table">
                             <thead>
                                 <tr>
                                     <th>
-                                        <span>|</span>
+                                        <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
-                                    <th>Creditor's Name</th>
+                                    <th>Name</th>
                                     <th>
-                                        <span>|</span>
+                                        <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
                                     <th>Date</th>
                                     <th>
-                                        <span>|</span>
+                                        <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
                                     <th>Amount</th>
                                     <th>
-                                        <span>|</span>
+                                        <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
-                                    <th>Bank_Name</th>
+                                    <th>Bank</th>
                                     <th>
-                                        <span>|</span>
+                                        <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
                                     <th>Status</th>
                                     <th>
-                                        <span>|</span>
+                                        <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
                                     <th>Action</th>
                                 </tr>
@@ -118,20 +118,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 22h4m12 0h-8m1.888-18.337l.742-.742a3.146 3.146 0 1 1 4.449 4.45l-.742.74m-4.449-4.448s.093 1.576 1.483 2.966s2.966 1.483 2.966 1.483m-4.449-4.45L7.071 10.48c-.462.462-.693.692-.891.947a5.2 5.2 0 0 0-.599.969c-.139.291-.242.601-.449 1.22l-.875 2.626m14.08-8.13L14.93 11.52m-3.41 3.41c-.462.462-.692.692-.947.891q-.451.352-.969.599c-.291.139-.601.242-1.22.448l-2.626.876m0 0l-.641.213a.848.848 0 0 1-1.073-1.073l.213-.641m1.501 1.5l-1.5-1.5" />
-                                                </svg>
-                                            </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linecap="round" d="M20.5 6h-17m6 5l.5 5m4.5-5l-.5 5" />
-                                                        <path d="M6.5 6h.11a2 2 0 0 0 1.83-1.32l.034-.103l.097-.291c.083-.249.125-.373.18-.479a1.5 1.5 0 0 1 1.094-.788C9.962 3 10.093 3 10.355 3h3.29c.262 0 .393 0 .51.019a1.5 1.5 0 0 1 1.094.788c.055.106.097.23.18.479l.097.291A2 2 0 0 0 17.5 6" />
-                                                        <path stroke-linecap="round" d="M18.374 15.4c-.177 2.654-.266 3.981-1.131 4.79s-2.195.81-4.856.81h-.774c-2.66 0-3.99 0-4.856-.81c-.865-.809-.953-2.136-1.13-4.79l-.46-6.9m13.666 0l-.2 3" />
-                                                    </g>
-                                                </svg>
-                                            </div>
+                                            
                                         </div>
                                     </td>
                                 </tr>
@@ -165,20 +152,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 22h4m12 0h-8m1.888-18.337l.742-.742a3.146 3.146 0 1 1 4.449 4.45l-.742.74m-4.449-4.448s.093 1.576 1.483 2.966s2.966 1.483 2.966 1.483m-4.449-4.45L7.071 10.48c-.462.462-.693.692-.891.947a5.2 5.2 0 0 0-.599.969c-.139.291-.242.601-.449 1.22l-.875 2.626m14.08-8.13L14.93 11.52m-3.41 3.41c-.462.462-.692.692-.947.891q-.451.352-.969.599c-.291.139-.601.242-1.22.448l-2.626.876m0 0l-.641.213a.848.848 0 0 1-1.073-1.073l.213-.641m1.501 1.5l-1.5-1.5" />
-                                                </svg>
-                                            </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linecap="round" d="M20.5 6h-17m6 5l.5 5m4.5-5l-.5 5" />
-                                                        <path d="M6.5 6h.11a2 2 0 0 0 1.83-1.32l.034-.103l.097-.291c.083-.249.125-.373.18-.479a1.5 1.5 0 0 1 1.094-.788C9.962 3 10.093 3 10.355 3h3.29c.262 0 .393 0 .51.019a1.5 1.5 0 0 1 1.094.788c.055.106.097.23.18.479l.097.291A2 2 0 0 0 17.5 6" />
-                                                        <path stroke-linecap="round" d="M18.374 15.4c-.177 2.654-.266 3.981-1.131 4.79s-2.195.81-4.856.81h-.774c-2.66 0-3.99 0-4.856-.81c-.865-.809-.953-2.136-1.13-4.79l-.46-6.9m13.666 0l-.2 3" />
-                                                    </g>
-                                                </svg>
-                                            </div>
+                                            
                                         </div>
                                     </td>
                                 </tr>
@@ -211,20 +185,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 22h4m12 0h-8m1.888-18.337l.742-.742a3.146 3.146 0 1 1 4.449 4.45l-.742.74m-4.449-4.448s.093 1.576 1.483 2.966s2.966 1.483 2.966 1.483m-4.449-4.45L7.071 10.48c-.462.462-.693.692-.891.947a5.2 5.2 0 0 0-.599.969c-.139.291-.242.601-.449 1.22l-.875 2.626m14.08-8.13L14.93 11.52m-3.41 3.41c-.462.462-.692.692-.947.891q-.451.352-.969.599c-.291.139-.601.242-1.22.448l-2.626.876m0 0l-.641.213a.848.848 0 0 1-1.073-1.073l.213-.641m1.501 1.5l-1.5-1.5" />
-                                                </svg>
-                                            </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linecap="round" d="M20.5 6h-17m6 5l.5 5m4.5-5l-.5 5" />
-                                                        <path d="M6.5 6h.11a2 2 0 0 0 1.83-1.32l.034-.103l.097-.291c.083-.249.125-.373.18-.479a1.5 1.5 0 0 1 1.094-.788C9.962 3 10.093 3 10.355 3h3.29c.262 0 .393 0 .51.019a1.5 1.5 0 0 1 1.094.788c.055.106.097.23.18.479l.097.291A2 2 0 0 0 17.5 6" />
-                                                        <path stroke-linecap="round" d="M18.374 15.4c-.177 2.654-.266 3.981-1.131 4.79s-2.195.81-4.856.81h-.774c-2.66 0-3.99 0-4.856-.81c-.865-.809-.953-2.136-1.13-4.79l-.46-6.9m13.666 0l-.2 3" />
-                                                    </g>
-                                                </svg>
-                                            </div>
+                                           
                                         </div>
                                     </td>
                                 </tr>
@@ -257,20 +218,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 22h4m12 0h-8m1.888-18.337l.742-.742a3.146 3.146 0 1 1 4.449 4.45l-.742.74m-4.449-4.448s.093 1.576 1.483 2.966s2.966 1.483 2.966 1.483m-4.449-4.45L7.071 10.48c-.462.462-.693.692-.891.947a5.2 5.2 0 0 0-.599.969c-.139.291-.242.601-.449 1.22l-.875 2.626m14.08-8.13L14.93 11.52m-3.41 3.41c-.462.462-.692.692-.947.891q-.451.352-.969.599c-.291.139-.601.242-1.22.448l-2.626.876m0 0l-.641.213a.848.848 0 0 1-1.073-1.073l.213-.641m1.501 1.5l-1.5-1.5" />
-                                                </svg>
-                                            </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linecap="round" d="M20.5 6h-17m6 5l.5 5m4.5-5l-.5 5" />
-                                                        <path d="M6.5 6h.11a2 2 0 0 0 1.83-1.32l.034-.103l.097-.291c.083-.249.125-.373.18-.479a1.5 1.5 0 0 1 1.094-.788C9.962 3 10.093 3 10.355 3h3.29c.262 0 .393 0 .51.019a1.5 1.5 0 0 1 1.094.788c.055.106.097.23.18.479l.097.291A2 2 0 0 0 17.5 6" />
-                                                        <path stroke-linecap="round" d="M18.374 15.4c-.177 2.654-.266 3.981-1.131 4.79s-2.195.81-4.856.81h-.774c-2.66 0-3.99 0-4.856-.81c-.865-.809-.953-2.136-1.13-4.79l-.46-6.9m13.666 0l-.2 3" />
-                                                    </g>
-                                                </svg>
-                                            </div>
+                                           
                                         </div>
                                     </td>
                                 </tr>
@@ -304,20 +252,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 22h4m12 0h-8m1.888-18.337l.742-.742a3.146 3.146 0 1 1 4.449 4.45l-.742.74m-4.449-4.448s.093 1.576 1.483 2.966s2.966 1.483 2.966 1.483m-4.449-4.45L7.071 10.48c-.462.462-.693.692-.891.947a5.2 5.2 0 0 0-.599.969c-.139.291-.242.601-.449 1.22l-.875 2.626m14.08-8.13L14.93 11.52m-3.41 3.41c-.462.462-.692.692-.947.891q-.451.352-.969.599c-.291.139-.601.242-1.22.448l-2.626.876m0 0l-.641.213a.848.848 0 0 1-1.073-1.073l.213-.641m1.501 1.5l-1.5-1.5" />
-                                                </svg>
-                                            </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linecap="round" d="M20.5 6h-17m6 5l.5 5m4.5-5l-.5 5" />
-                                                        <path d="M6.5 6h.11a2 2 0 0 0 1.83-1.32l.034-.103l.097-.291c.083-.249.125-.373.18-.479a1.5 1.5 0 0 1 1.094-.788C9.962 3 10.093 3 10.355 3h3.29c.262 0 .393 0 .51.019a1.5 1.5 0 0 1 1.094.788c.055.106.097.23.18.479l.097.291A2 2 0 0 0 17.5 6" />
-                                                        <path stroke-linecap="round" d="M18.374 15.4c-.177 2.654-.266 3.981-1.131 4.79s-2.195.81-4.856.81h-.774c-2.66 0-3.99 0-4.856-.81c-.865-.809-.953-2.136-1.13-4.79l-.46-6.9m13.666 0l-.2 3" />
-                                                    </g>
-                                                </svg>
-                                            </div>
+                                            
                                         </div>
                                     </td>
                                 </tr>
@@ -350,27 +285,14 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 22h4m12 0h-8m1.888-18.337l.742-.742a3.146 3.146 0 1 1 4.449 4.45l-.742.74m-4.449-4.448s.093 1.576 1.483 2.966s2.966 1.483 2.966 1.483m-4.449-4.45L7.071 10.48c-.462.462-.693.692-.891.947a5.2 5.2 0 0 0-.599.969c-.139.291-.242.601-.449 1.22l-.875 2.626m14.08-8.13L14.93 11.52m-3.41 3.41c-.462.462-.692.692-.947.891q-.451.352-.969.599c-.291.139-.601.242-1.22.448l-2.626.876m0 0l-.641.213a.848.848 0 0 1-1.073-1.073l.213-.641m1.501 1.5l-1.5-1.5" />
-                                                </svg>
-                                            </div>
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linecap="round" d="M20.5 6h-17m6 5l.5 5m4.5-5l-.5 5" />
-                                                        <path d="M6.5 6h.11a2 2 0 0 0 1.83-1.32l.034-.103l.097-.291c.083-.249.125-.373.18-.479a1.5 1.5 0 0 1 1.094-.788C9.962 3 10.093 3 10.355 3h3.29c.262 0 .393 0 .51.019a1.5 1.5 0 0 1 1.094.788c.055.106.097.23.18.479l.097.291A2 2 0 0 0 17.5 6" />
-                                                        <path stroke-linecap="round" d="M18.374 15.4c-.177 2.654-.266 3.981-1.131 4.79s-2.195.81-4.856.81h-.774c-2.66 0-3.99 0-4.856-.81c-.865-.809-.953-2.136-1.13-4.79l-.46-6.9m13.666 0l-.2 3" />
-                                                    </g>
-                                                </svg>
-                                            </div>
+                                            
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                </div>
+            </div>
 
 
                 

@@ -1,3 +1,4 @@
+
 <!-- ============================================= edit modal section ==================================================== -->
  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -49,12 +50,12 @@
                 </div>
                 <div class="all-edit-input">
                     <div class="edit-input-content">
-                        <label for="course">Current Course</label>
-                        <input type="text" value="Web Development" readonly>
+                        <label for="course">Phone Number</label>
+                        <input type="text" value="+234-81077-23129">
                     </div>
                         <div class="edit-input-content">
-                            <label for="certificate">Certificate</label>
-                            <input type="text" value="2" readonly>
+                            <label for="certificate">Address</label>
+                            <input type="text" value="Grace villa, Ebonyi State.">
                         </div>
                 </div>
                 <div class="save-cta mb-3">
