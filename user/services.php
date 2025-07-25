@@ -1,6 +1,7 @@
 <?php 
     $title = "Services";
     require_once('./header.php');
+    require_once('./sidebar.php');
 ?>
 
 
@@ -36,9 +37,9 @@
                                 <h4>Airtime</h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Instant top-up service</label>
                         </div>
                         <!-- ==============stars ================ -->
                             <div class="star-2">
@@ -123,9 +124,9 @@
                                 <h4>Data</h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Flexible data plans available</label>
                         </div>
                             <!-- ==============stars ================ -->
                             <div class="star-2">
@@ -206,9 +207,9 @@
                                 <h4>Betting</h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Fast deposits for top betting sites</label>
                         </div>
                             <!-- ==============stars ================ -->
                             <div class="star-2">
@@ -293,9 +294,9 @@
                                 <h4>Electricity</h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Reliable power bill payment service</label>
                         </div>
                             <!-- ==============stars ================ -->
                             <div class="star-2">
@@ -376,9 +377,9 @@
                                 <h4>Solar</h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Pay for solar energy with ease</label>
                         </div>
                             <!-- ==============stars ================ -->
                             <div class="star-2">
@@ -462,14 +463,14 @@
                             </div>
                             <div class="service-title">
                                 <h4>
-                                    <span>School &</span>
-                                    <span>Exam</span>
+                                    <span>School <use>&</use></span>
+                                    <span><use>Exam</use></span>
                                 </h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Convenient school fee processing</label>
                         </div>
                             <!-- ==============stars ================ -->
                             <div class="star-2">
@@ -553,13 +554,13 @@
                             <div class="service-title">
                                 <h4>
                                     <span>Prepaid Card</span>
-                                    <span>Services</span>
+                                    <span><use>Services</use></span>
                                 </h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Buy prepaid cards instantly</label>
                         </div>
                             <!-- ==============stars ================ -->
                             <div class="star-2">
@@ -641,14 +642,14 @@
                             </div>
                             <div class="service-title">
                                 <h4>
-                                    <span>Aid Grants &</span>
+                                    <span><use>Aid Grants &</use></span>
                                     <span>Donations</span>
                                 </h4>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line service-divide"></div>
                         <div class="service-foot">
-                            <label>All services available </label>
+                            <label>Support causes that matter to you</label>
                         </div>
                         <!-- ==============stars ================ -->
                             <div class="star-2">

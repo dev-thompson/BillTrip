@@ -1,8 +1,65 @@
+@media (max-width:1200px) {
+    .dashboard-left {
+        display: none;
+    }
+    .dashboard-right {
+        width: 100%;
+    }
+    #bars{
+        display:block;
+    }
+    #sidebars {
+        display: block;
+        width: 35%;
+    }
+}
+
 @media (max-width:950px) {
     .main-btn-2 {
         padding: 11px 30px;
         min-width: 50%;
 
+    }
+    .booking-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all-calendar {
+        display: block;
+    }
+    .booked-room-today {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #source-calendar {
+        width: 100%;
+    }
+    .facility span {
+        display: unset;
+    }
+}
+
+@media (max-width:900px) {
+    .service-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .airtime-content {
+        display: block;
+        align-items: unset;
+    }
+    .airtime-left{
+        width:100%;
+        margin-bottom: 30px;
+    }
+    .airtime-right{
+        width:100%;
+    }
+    .airtime-right-header {
+        background-color:rgba(74, 74, 74, 0.174);
+        padding: 10px;
+        color: var(--secondary);
+        border-radius: 5px 5px 0 0 ;
     }
 }
 
@@ -13,6 +70,14 @@
     .personal-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    #sidebars {
+        display: block;
+        width: 45%;
+    }
+    .service-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -27,15 +92,105 @@
         display: unset;
     }
 }
+@media (max-width:500px) {
+     #sidebars {
+        display: block;
+        width: 55%;
+        padding-bottom: 80px;
+    }
+    .dash-nav-left h5 {
+        display: none;
+    }
+    .booking-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #source-calendar {
+        display: none;
+    }
+    .booked-room-today {
+        padding: 15px;
+        margin-bottom: unset;
+    }
+    .all-calendar {
+        padding:unset;
+        border: unset;
+    }
+    .all-dash-body {
+        padding: 30px 15px;
+    }
+}
 @media (max-width:450px) {
     .main-btn-2 {
         min-width: 60%;
 
     }
+    #sidebars {
+        display: block;
+        width: 60%;
+    }
+    .service-divide, .service-foot {
+        display: none;
+    }
+    .service-top {
+        padding: 10px;
+        display: block;
+        align-items:unset;
+        justify-items:center;
+    }
+    .service-title h4 span {
+        display:unset;
+    }
+    .service-title h4 {
+        font-size: 13px;
+        text-align: center;
+    }
+    .service-icon {
+        margin-bottom: 10px;
+    }
+    .service-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .service-item {
+        height: fit-content;
+    }
+    .service-title use {
+        display: none;
+    }
+    .chart-card {
+        display: none;
+    }
 }
+
 @media (max-width:400px) {
     .edit-profile-left img{
         width: 180px;
         height: 180px;
+    }
+    #sidebars {
+        display: block;
+        width: 76%;
+    }
+    .balance-icon svg {
+    width: 14px;
+    }
+    .balance-title label {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    .balance-title i {
+        font-size: 0.7rem;
+        cursor: pointer;
+    }
+    .history a {
+        font-size: 12px;
+    }
+    .history i {
+        font-size: 0.5rem;
+    }
+    .add-btn {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 }

@@ -1,6 +1,7 @@
 <?php 
     $title = "Account Details";
     require_once('./header.php');
+    require_once('./sidebar.php');
 ?>
 
 

@@ -74,6 +74,33 @@ a{
 }
 /* ======================================== end of global design =============================================== */
 
+/* ==================================== sidebar section ============================== */
+#sidebars {
+    width: 25%;
+    height: 100vh;
+    border-right: 1px solid var(--border);
+    background:var(--primary);
+    overflow-y: scroll;
+    padding-bottom: 50px;
+    display: none;
+    position: fixed;
+    top: 0;
+    transition: left 1s ease;
+    left: -1000px;
+    z-index: 10000;
+}
+#sidebars.show{
+    left: 0;
+}
+#bars{
+    display: none;
+    cursor: pointer;
+}
+.no-scroll {
+    overflow: hidden;
+}
+/* ==================================== end of sidebar section ============================== */
+
 /* =======================dashboard section ============================================ */
 .dashboard-content {
     display: flex;
@@ -84,8 +111,17 @@ a{
     border-right: 1px solid var(--border);
     background:var(--primary);
     overflow-y: scroll;
+    padding-bottom: 50px;
 }
-.dashboard-left::-webkit-scrollbar {
+#sidebars {
+    width: 19%;
+    height: 100vh;
+    border-right: 1px solid var(--border);
+    background:var(--primary);
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.dashboard-left::-webkit-scrollbar, #sidebars::-webkit-scrollbar {
     width: 3px;
     background: transparent;
 }
@@ -142,6 +178,11 @@ a{
 /* ======================= rgb(121, 121, 255)  rgba(255, 255, 255, 0.1) end of dashboard section rgb(117, 117, 239) ============================================ */
 
 /* ============================================= navbar section ========================================= */
+.dash-nav-left {
+    display: flex;
+    align-items:flex-start;
+    gap: 25px;
+}
 .dash-navbar {
     display: flex;
     align-items: center;

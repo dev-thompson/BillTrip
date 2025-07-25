@@ -5,3 +5,4 @@
 <script src="./assets/js/edit-profile.js"></script>
 <script src="./assets/js/calender.js"></script>
 <script src="./assets/js/balance.js"></script>
+<script src="./assets/js/sidebar-toggle.js"></script>

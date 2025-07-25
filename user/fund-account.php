@@ -1,6 +1,7 @@
 <?php 
     $title = "Fund Account";
     require_once('./header.php');
+    require_once('./sidebar.php');
 ?>
 
 

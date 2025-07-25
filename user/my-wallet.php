@@ -1,6 +1,7 @@
 <?php 
     $title = "My Wallet";
     require_once('./header.php');
+    require_once('./sidebar.php');
 ?>
 
 
@@ -34,7 +35,7 @@
                         </div>
                     </div>
                     <div class="history">
-                        <a href=""><label>Transaction History</label> <i class="fa fa-chevron-right"></i></a>
+                        <a href="./payment-history"><label>Transaction History</label> <i class="fa fa-chevron-right"></i></a>
                     </div>
                 </div>
                 

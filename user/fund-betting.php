@@ -1,6 +1,7 @@
 <?php 
     $title = "Fund Betting Wallet";
     require_once('./header.php');
+    require_once('./sidebar.php');
 ?>
 
 

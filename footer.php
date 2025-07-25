@@ -37,6 +37,7 @@
  <div class="foot-date">
     <h5>Copyright &copy; BillTrip 2025. <span>All Rights Reserved</span></h5>
 </div>
+</div>
 
 
 <!-- ======================================== end of foot date section ====================================================== -->

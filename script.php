@@ -4,6 +4,7 @@
 <script src="./assets/js/index.js"></script>
 <script src="./assets/js/fixed-navbar.js"></script>
 <script src="./assets/js/sidebar.js"></script>
+<script src="./assets/js/preloader.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init(); // Initialize AOS
