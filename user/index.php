@@ -135,10 +135,6 @@
                                     <th>
                                         <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
-                                    <th>Room Facility</th>
-                                    <th>
-                                        <span><i class="fa-solid fa-i-cursor"></i></span>
-                                    </th>
                                     <th>Status</th>
                                     <th>
                                         <span><i class="fa-solid fa-i-cursor"></i></span>
@@ -160,13 +156,6 @@
                                     <td>Single Bed</td>
                                     <td></td>
                                     <td>Floor G-05</td>
-                                    <td></td>
-                                    <td>
-                                        <div class="facility">
-                                            <span>AC, Shower, Double Bed, Towel,</span>
-                                            <span>Bathup, Coffee Set, LED TV, Wifi</span>
-                                        </div>
-                                    </td>
                                     <td></td>
                                     <td>
                                         <span class="badge bg-success">Available</span>
@@ -200,13 +189,6 @@
                                     <td>Floor G-11</td>
                                     <td></td>
                                     <td>
-                                        <div class="facility">
-                                            <span>AC, Shower, Double Bed, Towel,</span>
-                                            <span>Bathup, Coffee Set, LED TV, Wifi</span>
-                                        </div>
-                                    </td>
-                                    <td></td>
-                                    <td>
                                         <span class="badge bg-danger">Booked</span>
                                     </td>
                                     <td></td>
@@ -236,13 +218,6 @@
                                     <td>Single Bed</td>
                                     <td></td>
                                     <td>Floor G-05</td>
-                                    <td></td>
-                                    <td>
-                                        <div class="facility">
-                                            <span>AC, Shower, Double Bed, Towel,</span>
-                                            <span>Bathup, Coffee Set, LED TV, Wifi</span>
-                                        </div>
-                                    </td>
                                     <td></td>
                                     <td>
                                         <span class="badge bg-success">Available</span>
@@ -276,13 +251,6 @@
                                     <td>Floor G-11</td>
                                     <td></td>
                                     <td>
-                                        <div class="facility">
-                                            <span>AC, Shower, Double Bed, Towel,</span>
-                                            <span>Bathup, Coffee Set, LED TV, Wifi</span>
-                                        </div>
-                                    </td>
-                                    <td></td>
-                                    <td>
                                         <span class="badge bg-danger">Booked</span>
                                     </td>
                                     <td></td>
@@ -314,13 +282,6 @@
                                     <td>Floor G-05</td>
                                     <td></td>
                                     <td>
-                                        <div class="facility">
-                                            <span>AC, Shower, Double Bed, Towel,</span>
-                                            <span>Bathup, Coffee Set, LED TV, Wifi</span>
-                                        </div>
-                                    </td>
-                                    <td></td>
-                                    <td>
                                         <span class="badge bg-success">Available</span>
                                     </td>
                                     <td></td>
@@ -350,13 +311,6 @@
                                     <td>Double Bed</td>
                                     <td></td>
                                     <td>Floor G-11</td>
-                                    <td></td>
-                                    <td>
-                                        <div class="facility">
-                                            <span>AC, Shower, Double Bed, Towel,</span>
-                                            <span>Bathup, Coffee Set, LED TV, Wifi</span>
-                                        </div>
-                                    </td>
                                     <td></td>
                                     <td>
                                         <span class="badge bg-danger">Booked</span>

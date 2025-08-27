@@ -63,6 +63,19 @@
     }
 }
 
+@media (max-width:800px) {
+    .room-details-content {
+        display: block;
+    }
+    .room-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .room-right {
+        width: 100%;
+    }
+}
+
 @media (max-width:700px) {
     .all-edit-input {
         display: block;
@@ -79,6 +92,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .payment-double {
+        display: block;
+    }
 }
 
 @media (max-width:550px) {
@@ -90,6 +106,9 @@
     }
     .profile-right p span {
         display: unset;
+    }
+    .inner-input{
+        padding:unset ;
     }
 }
 @media (max-width:500px) {
@@ -142,7 +161,7 @@
         display:unset;
     }
     .service-title h4 {
-        font-size: 13px;
+        font-size: 11px;
         text-align: center;
     }
     .service-icon {
@@ -150,16 +169,26 @@
     }
     .service-content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .service-item {
         height: fit-content;
+        border: none;
+    }
+    .service-top {
+        padding: 0px;
     }
     .service-title use {
         display: none;
     }
     .chart-card {
         display: none;
+    }
+    .credit-header img{
+        width: 120px;
+    }
+    .overview {
+        padding: 0 0px 20px 0px;
     }
 }
 

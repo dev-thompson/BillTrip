@@ -56,7 +56,7 @@
             <div class="all-tables mt-4">
                     <div class="overview">
                         <h6>Transaction History</h6>
-                        <a href="./payment-history">See all</a>
+                        <!-- <a href="">See all</a> -->
                     </div>
                     <div class="table-responsive">
                         <table class="table table-hover custom-table">
@@ -92,17 +92,17 @@
                             
                                 <tr>
                                     <td></td>
-                                    <td>John Thompson</td>
+                                    <td>Thompson</td>
                                     <td></td>
                                     <td>02/06/2025</td>
                                     <td></td>
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>8900</label>
+                                            <label>8,900</label>
                                         </div>
-                                    </td>
                                     <td></td>
+                                    </td>
                                     <td>Moniepoint</td>
                                     <td></td>
                                     <td>
@@ -111,7 +111,7 @@
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#walletModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -133,7 +133,7 @@
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>5900</label>
+                                            <label>5,900</label>
                                         </div>
                                     </td>
                                     <td></td>
@@ -145,7 +145,7 @@
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#pendingModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -159,14 +159,14 @@
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td>John Thompson</td>
+                                    <td> Thompson</td>
                                     <td></td>
                                     <td>02/06/2025</td>
                                     <td></td>
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>8900</label>
+                                            <label>8,900</label>
                                         </div>
                                     </td>
                                     <td></td>
@@ -178,7 +178,7 @@
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#rejectModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -192,14 +192,14 @@
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td>John Thompson</td>
+                                    <td> Thompson</td>
                                     <td></td>
                                     <td>02/06/2025</td>
                                     <td></td>
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>8900</label>
+                                            <label>8,900</label>
                                         </div>
                                     </td>
                                     <td></td>
@@ -211,7 +211,7 @@
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#walletModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -219,7 +219,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                           
+                                            
                                         </div>
                                     </td>
                                 </tr>
@@ -233,7 +233,7 @@
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>5900</label>
+                                            <label>5,900</label>
                                         </div>
                                     </td>
                                     <td></td>
@@ -245,7 +245,7 @@
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#pendingModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -259,14 +259,14 @@
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td>John Thompson</td>
+                                    <td> Thompson</td>
                                     <td></td>
                                     <td>02/06/2025</td>
                                     <td></td>
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>8900</label>
+                                            <label>8,900</label>
                                         </div>
                                     </td>
                                     <td></td>
@@ -278,7 +278,7 @@
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#rejectModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -286,10 +286,11 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            
+                                           
                                         </div>
                                     </td>
                                 </tr>
+                         
                             </tbody>
                         </table>
                     </div>
@@ -300,7 +301,8 @@
                 
             </div>
 
-            <?php 
+            <?php
+                require_once('./assets/modal/wallet-modal.php');
                 require_once('./footer.php');
             ?>
     <!-- ============================================== end of dash body ==================================================== -->

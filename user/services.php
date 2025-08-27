@@ -735,8 +735,8 @@
 
                 <div class="all-tables mt-4">
                     <div class="overview">
-                        <h6>Payment Overview</h6>
-                        <a href="">See all</a>
+                        <h6>Recent Transactions</h6>
+                        <a href="./payment-history">See all</a>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-hover custom-table">
@@ -757,7 +757,7 @@
                                     <th>
                                         <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
-                                    <th>Payment-Method</th>
+                                    <th>Payment Method</th>
                                     <th>
                                         <span><i class="fa-solid fa-i-cursor"></i></span>
                                     </th>
@@ -772,26 +772,26 @@
                             
                                 <tr>
                                     <td></td>
-                                    <td>Airtime</td>
+                                    <td> Airtime</td>
                                     <td></td>
                                     <td>02/06/2025</td>
                                     <td></td>
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>8900</label>
+                                            <label>8,900</label>
                                         </div>
                                     </td>
                                     <td></td>
-                                    <td>Paystack</td>
+                                    <td>Wallet</td>
                                     <td></td>
                                     <td>
-                                        <span class="badge bg-success">Paid</span>
+                                        <span class="badge bg-success">Successful</span>
                                     </td>
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#walletModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -813,19 +813,19 @@
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>5900</label>
+                                            <label>5,900</label>
                                         </div>
                                     </td>
                                     <td></td>
-                                    <td>Mastercard</td>
+                                    <td>Wallet</td>
                                     <td></td>
                                     <td>
-                                        <span class="badge bg-danger">Due</span>
+                                        <span class="badge" style="background-color: #ff6600be;">Pending</span>
                                     </td>
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#pendingModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -839,26 +839,26 @@
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td>Airtime</td>
+                                    <td>Data</td>
                                     <td></td>
                                     <td>02/06/2025</td>
                                     <td></td>
                                     <td>
                                         <div class="table-amount">
                                             <label>₦</label>
-                                            <label>8900</label>
+                                            <label>8,900</label>
                                         </div>
                                     </td>
                                     <td></td>
-                                    <td>Paystack</td>
+                                    <td>Wallet</td>
                                     <td></td>
                                     <td>
-                                        <span class="badge bg-success">Paid</span>
+                                        <span class="badge bg-danger">Reversed</span>
                                     </td>
                                     <td></td>
                                     <td>
                                         <div class="all-action">
-                                            <div class="action-icon">
+                                            <div class="action-icon" data-bs-toggle="modal" data-bs-target="#rejectModal">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <g fill="none" stroke="currentColor" stroke-width="1.5">
                                                         <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
@@ -866,40 +866,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                        
-                                <tr>
-                                    <td></td>
-                                    <td>Electricity</td>
-                                    <td></td>
-                                    <td>02/04/2025</td>
-                                    <td></td>
-                                    <td>
-                                        <div class="table-amount">
-                                            <label>₦</label>
-                                            <label>5900</label>
-                                        </div>
-                                    </td>
-                                    <td></td>
-                                    <td>Mastercard</td>
-                                    <td></td>
-                                    <td>
-                                        <span class="badge bg-danger">Due</span>
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        <div class="all-action">
-                                            <div class="action-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linecap="round" d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821" />
-                                                        <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" />
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                            
+                                           
                                         </div>
                                     </td>
                                 </tr>
@@ -912,7 +879,8 @@
                 
             </div>
 
-            <?php 
+            <?php
+                require_once('./assets/modal/service-modal.php'); 
                 require_once('./footer.php');
             ?>
     <!-- ============================================== end of dash body ==================================================== -->

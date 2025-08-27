@@ -78,7 +78,7 @@ a{
 #sidebars {
     width: 25%;
     height: 100vh;
-    border-right: 1px solid var(--border);
+    border-right: none;
     background:var(--primary);
     overflow-y: scroll;
     padding-bottom: 50px;
@@ -106,14 +106,6 @@ a{
     display: flex;
 }
 .dashboard-left {
-    width: 19%;
-    height: 100vh;
-    border-right: 1px solid var(--border);
-    background:var(--primary);
-    overflow-y: scroll;
-    padding-bottom: 50px;
-}
-#sidebars {
     width: 19%;
     height: 100vh;
     border-right: 1px solid var(--border);
@@ -213,6 +205,9 @@ a{
     font-size: 13px;
     margin-bottom: 15px;
 }
+.right-notify svg{
+    cursor: pointer;
+}
 .profile-nav-items {
     border: 1px solid var(--border);
     background: var(--primary);
@@ -221,7 +216,7 @@ a{
     z-index: 2;
     position: absolute;
     right: 20px;
-    top:75px;
+    top:65px;
     display: none;
     transition: 1s ease-in-out;
 }
@@ -517,7 +512,7 @@ a{
       align-items: center;
       margin-bottom: 20px;
     }
-    .chart-header select {
+    .chart-header select, .overview-input select {
         border: 1px solid var(--border);
         outline: none;
         background-color: transparent;
@@ -527,12 +522,11 @@ a{
         font-size: 14px;
         cursor: pointer;
     }
-    .chart-header select option {
+    .chart-header select option, .overview-input select option {
         background-color: var(--primary);
         color: var(--secondary);
         border-color: var(--border);
     }
-
     canvas {
       width: 100% !important;
       height:auto !important;
@@ -784,9 +778,39 @@ a{
     border-color: var(--border);
     color: var(--secondary);
 }
-.airtime-check input {
-    accent-color: #ff660092;
+.airtime-check input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid var(--secondary);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
 }
+
+.airtime-check input[type="checkbox"]::before {
+  content: "✓";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 14px;
+  color: white; /* You can change to black or green */
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.airtime-check input[type="checkbox"]:checked {
+  background-color: #ff6600d8; 
+  border: none;
+}
+
+.airtime-check input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
 .airtime-check {
     display: flex;
     align-items: center;
@@ -1036,3 +1060,35 @@ a{
     font-weight: 500;
 }
 /* ============================= end of payment section =============================== */
+
+/* ============================= transer modal section ======================== */
+.transfer-icon svg {
+    width: 100px;
+    height: 100px;
+    color: #0ed03b;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+.pending-icon svg {
+    width: 100px;
+    height: 100px;
+    color: #ff6600be;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+.reject-icon svg {
+    width: 100px;
+    height: 100px;
+    color: rgb(236, 30, 30);
+    display: flex;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+.tranfer-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+/* ============================= end of transer modal section ======================== */
